@@ -29,7 +29,7 @@ const breedsList = document.getElementById("breedsList");
 let currentFile = null;
 
 // Separate backend changes :)
-const API_BASE_URL = 'http://node.rishavverma.com:25566';
+const API_BASE_URL = 'https://krishilens-backend.vercel.app';
 const ANALYZE_ENDPOINT = `${API_BASE_URL}/api/analyze`;
 
 // When gallery icon is clicked, open file explorer
@@ -305,4 +305,5 @@ async function analyzeImage(file) {
     } finally {
         hideLoading();
     }
+
 }
